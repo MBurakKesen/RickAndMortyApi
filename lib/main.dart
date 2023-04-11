@@ -8,5 +8,8 @@ import 'package:rick_and_morty_api_demo/services/seriveces.dart';
 import 'models/Character.dart';
 
 void main() {
-  runApp(MaterialApp(home: const WelcomePage()));
+  runApp(MaterialApp(
+      home: const WelcomePage(),
+      debugShowCheckedModeBanner:false,
+  ),);
 }

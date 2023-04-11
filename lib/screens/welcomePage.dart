@@ -18,14 +18,18 @@ class _WelcomePageState extends State<WelcomePage> {
           title: Text("RİCK AND MORTY APP"),
           centerTitle: true,
         ),
-        body: Column(
-          children: [
-              Text("KARAKTERLER"),
-              OutlinedButton(child:Text("git"),
-                onPressed:(){setState(() {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> CharsPage()));
-                });}),
-          ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+                Text("KARAKTERLERİ GÖSTER"),
+                OutlinedButton(child:Text("Git"),
+                  onPressed:(){setState(() {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> CharsPage()));
+                  });}),
+
+            ],
+          ),
         ),
     );
   }

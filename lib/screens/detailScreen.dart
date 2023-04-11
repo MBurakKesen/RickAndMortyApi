@@ -17,9 +17,9 @@ class DetailPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Image(image: NetworkImage(image)),
-            Text(gender!),
-            Text(species!),
-            Text(status!),
+            Text("Cinsiyeti: ${gender!}"),
+            Text("Türü: ${species!}"),
+            Text("Hayati Durumu: ${status!}"),
           ],
         ),
       )
